@@ -2,5 +2,8 @@
   "app_header": {
     "sign_in": "Sign in",
     "contact_us": "Contact us"
+  },
+  "top_menu": {
+    "search": "Search our catalog"
   }
 }
