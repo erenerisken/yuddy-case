@@ -10,6 +10,7 @@ import './index.css';
 import App from './App';
 import { CacheProvider } from '@emotion/react';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { ToastContainer } from 'material-react-toastify';
 
 export const muiCache = createCache({
   key: 'mui',
@@ -23,6 +24,16 @@ root.render(
   <CacheProvider value={muiCache}>
     <ThemeProvider theme={createTheme()}>
       <App />
+      <ToastContainer
+        position='top-center'
+        autoClose={6000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        draggable
+        pauseOnHover
+      />
     </ThemeProvider>
   </CacheProvider>,
 );
