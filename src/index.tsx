@@ -7,10 +7,13 @@ import '@fontsource/roboto/700.css';
 import createCache from '@emotion/cache';
 
 import './index.css';
+import './i18n';
 import App from './App';
 import { CacheProvider } from '@emotion/react';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { ToastContainer } from 'material-react-toastify';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter } from 'react-router-dom';
 
 export const muiCache = createCache({
   key: 'mui',
@@ -22,18 +25,22 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <CacheProvider value={muiCache}>
-    <ThemeProvider theme={createTheme()}>
-      <App />
-      <ToastContainer
-        position='top-center'
-        autoClose={6000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        draggable
-        pauseOnHover
-      />
-    </ThemeProvider>
+    <RecoilRoot>
+      <BrowserRouter>
+        <ThemeProvider theme={createTheme()}>
+          <App />
+          <ToastContainer
+            position='top-center'
+            autoClose={6000}
+            hideProgressBar={false}
+            newestOnTop
+            closeOnClick
+            rtl={false}
+            draggable
+            pauseOnHover
+          />
+        </ThemeProvider>
+      </BrowserRouter>
+    </RecoilRoot>
   </CacheProvider>,
 );
