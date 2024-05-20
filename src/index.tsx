@@ -6,6 +6,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import createCache from '@emotion/cache';
 
+import 'material-react-toastify/dist/ReactToastify.css';
 import './index.css';
 import './i18n';
 import App from './App';

@@ -1,0 +1,309 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Shop",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+      "subcategories": [
+        {
+          "id": 101,
+          "name": "Fashion",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 10101,
+              "name": "Men",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10102,
+              "name": "Women",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10103,
+              "name": "Kids",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10104,
+              "name": "Accessories",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Jewellery",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 10201,
+              "name": "Rings",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10202,
+              "name": "Bracelets",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10203,
+              "name": "Necklaces",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10204,
+              "name": "Wedding Bands",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "name": "Furniture",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 10301,
+              "name": "Living Room",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10302,
+              "name": "Kitchen",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10303,
+              "name": "Office",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10304,
+              "name": "Home Decor",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "name": "Autoparts",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 10401,
+              "name": "Engine Parts",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10402,
+              "name": "Exhaust Parts",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10403,
+              "name": "Brake Parts",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 10404,
+              "name": "Body Parts",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Electronics",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+      "subcategories": [
+        {
+          "id": 201,
+          "name": "Mobiles",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 20101,
+              "name": "Apple",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 20102,
+              "name": "BlackBerry",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 20103,
+              "name": "OnePlus",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 20104,
+              "name": "Sony",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Cameras",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 20201,
+              "name": "DSLR",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 20202,
+              "name": "Lences",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 20203,
+              "name": "Tripods",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 20204,
+              "name": "Batteries",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sports & Books",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+      "subcategories": [
+        {
+          "id": 301,
+          "name": "Sports",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 30101,
+              "name": "Football",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 30102,
+              "name": "Volleyball",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 30103,
+              "name": "Cricket",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Books",
+          "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+          "subcategories": [
+            {
+              "id": 30201,
+              "name": "Literature",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 30202,
+              "name": "Philosophy",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            },
+            {
+              "id": 30203,
+              "name": "Academics",
+              "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+              "subcategories": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sale",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
+      "subcategories": []
+    }
+  ]
+}

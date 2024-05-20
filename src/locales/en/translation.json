@@ -3,6 +3,10 @@
     "sign_in": "Sign in",
     "contact_us": "Contact us"
   },
+  "navigation_bar": {
+    "contact_us": "Contact Us",
+    "home": "Home"
+  },
   "top_menu": {
     "search": "Search our catalog"
   }

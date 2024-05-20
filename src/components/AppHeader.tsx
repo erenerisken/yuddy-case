@@ -105,7 +105,7 @@ const AppHeader = () => {
             vertical: 'top',
             horizontal: 'left',
           }}
-          sx={{ mt: 2 }}
+          sx={{ mt: 2.5 }}
         >
           <Box
             component='div'
@@ -161,7 +161,7 @@ const AppHeader = () => {
             vertical: 'top',
             horizontal: 'left',
           }}
-          sx={{ mt: 2 }}
+          sx={{ mt: 2.5 }}
         >
           <Box
             component='div'
