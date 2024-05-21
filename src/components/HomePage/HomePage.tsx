@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 import BannerCarousel from './BannerCarousel';
 import { useTranslation } from 'react-i18next';
 import { sharedColors, sharedStyles } from '../../utils/Style';
+import BrandsSection from './BrandsSection';
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -40,6 +41,7 @@ const HomePage = () => {
           }}
         />
       </Box>
+      <BrandsSection />
     </Box>
   );
 };

@@ -4,6 +4,9 @@
     "sign_in": "Sign in"
   },
   "homepage": {
+    "brands": {
+      "title": "Brands"
+    },
     "featured_products": "Featured Products"
   },
   "navigation_bar": {
