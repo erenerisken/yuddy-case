@@ -1,4 +1,22 @@
 {
+  "banners": [
+    {
+      "id": 1,
+      "h1": "MEGA STORE",
+      "h2": "TRENDING\nFASHION LOOK",
+      "h3": "New Clothes, New Passion.",
+      "image": "https://demo4techies.com/prestashop/shopkart-lite/modules/ps_imageslider/images/8187e2cea6dcd5e1b98a1b1af132211cf94c9a8e_Slider-1.jpg",
+      "buttonText": "Shop Today"
+    },
+    {
+      "id": 2,
+      "h1": "DRESS WELL",
+      "h2": "SUMMER\nCOLLECTION",
+      "h3": "Sale Up To 40% Off.",
+      "image": "https://demo4techies.com/prestashop/shopkart-lite/modules/ps_imageslider/images/4d4d5897cf3d07949875e686ef53f604262c00c5_Slider-2.jpg",
+      "buttonText": "Shop Today"
+    }
+  ],
   "categories": [
     {
       "id": 1,

@@ -72,7 +72,7 @@ const AppHeader = () => {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
-          width: { xs: 0, sm: 540, md: 720, lg: 960, xl: 1140 },
+          width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
         }}
       >
         <Box

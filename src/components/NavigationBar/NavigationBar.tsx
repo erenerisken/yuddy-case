@@ -66,7 +66,7 @@ const NavigationBar = () => {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
-          width: { xs: 0, sm: 540, md: 720, lg: 960, xl: 1140 },
+          width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
         }}
       >
         <Button sx={buttonStyle}>{t('navigation_bar.home')}</Button>

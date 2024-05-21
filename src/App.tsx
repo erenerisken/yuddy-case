@@ -10,6 +10,8 @@ import { categoriesAtom } from './atoms/Category';
 import { getCategories } from './services/Category';
 import { toast } from 'material-react-toastify';
 import NavigationBar from './components/NavigationBar/NavigationBar';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage/HomePage';
 
 const App = () => {
   const setCategories = useSetRecoilState(categoriesAtom);
@@ -30,6 +32,10 @@ const App = () => {
       <AppHeader />
       <TopMenuDesktop />
       <NavigationBar />
+      <Routes>
+        <Route path='/home/*' element={<HomePage />} />
+        <Route path='*' element={<Navigate to='/home' replace />} />
+      </Routes>
     </Box>
   );
 };
