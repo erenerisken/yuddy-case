@@ -83,6 +83,7 @@ const NavigationBar = () => {
         <Popover
           open={!!categoryAnchor && !isEmpty(hoveredCategory?.subcategories)}
           anchorEl={categoryAnchor}
+          disableScrollLock
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'left',

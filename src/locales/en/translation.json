@@ -1,7 +1,10 @@
 {
   "app_header": {
-    "sign_in": "Sign in",
-    "contact_us": "Contact us"
+    "contact_us": "Contact us",
+    "sign_in": "Sign in"
+  },
+  "homepage": {
+    "featured_products": "Featured Products"
   },
   "navigation_bar": {
     "contact_us": "Contact Us",

@@ -27,3 +27,14 @@ export const sharedColors = {
   primary: '#3F51B5',
   primaryDark: '#002884',
 };
+
+export const sharedStyles = {
+  h2: {
+    fontWeight: 600,
+    fontSize: {
+      xs: '1.375rem',
+      sm: '1.775rem',
+      md: '36px',
+    },
+  },
+};

@@ -97,6 +97,7 @@ const AppHeader = () => {
           open={!!languageAnchor}
           anchorEl={languageAnchor}
           onClose={() => setLanguageAnchor(null)}
+          disableScrollLock
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'left',
@@ -153,6 +154,7 @@ const AppHeader = () => {
           open={!!currencyAnchor}
           anchorEl={currencyAnchor}
           onClose={() => setCurrencyAnchor(null)}
+          disableScrollLock
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'left',
