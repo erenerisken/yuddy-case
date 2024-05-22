@@ -1,5 +1,5 @@
 import { Box, Button, Popover, Typography } from '@mui/material';
-import { sharedColors } from '../utils/Style';
+import { sharedColors, sharedStyles } from '../utils/Style';
 import { getLanguageName, getStoredLanguage } from '../utils/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from 'react';
@@ -66,15 +66,7 @@ const AppHeader = () => {
         py: 2,
       }}
     >
-      <Box
-        component='div'
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
-        }}
-      >
+      <Box component='div' sx={sharedStyles.horizontalSpan}>
         <Box
           component='div'
           onClick={(e) => setLanguageAnchor(e.currentTarget)}

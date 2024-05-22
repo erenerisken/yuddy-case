@@ -3,6 +3,10 @@
     "contact_us": "Contact us",
     "sign_in": "Sign in"
   },
+  "common": {
+    "currency": "{{symbol}}{{amount}}",
+    "percentage": "{{value}}%"
+  },
   "homepage": {
     "brands": {
       "title": "Brands"
@@ -12,6 +16,11 @@
   "navigation_bar": {
     "contact_us": "Contact Us",
     "home": "Home"
+  },
+  "product": {
+    "add_to_cart": "Add to cart",
+    "new_product": "New Product",
+    "on_sale": "On Sale!"
   },
   "top_menu": {
     "search": "Search our catalog"

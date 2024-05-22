@@ -7,6 +7,8 @@ export const sharedColors = {
   blue6: '#0D47A1',
   blue7: '#001D6C',
   gray1: '#333333',
+  gray2: '#7A7A7A',
+  gray3: '#8B8F98',
   gray4: '#ADADAD',
   purple1: '#F3E5F5',
   purple4: '#BA68C8',
@@ -36,5 +38,11 @@ export const sharedStyles = {
       sm: '1.775rem',
       md: '36px',
     },
+  },
+  horizontalSpan: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
   },
 };

@@ -49,7 +49,7 @@ const BrandsSection = () => {
           flexGrow: 1,
           justifyContent: 'center',
           textTransform: 'uppercase',
-          mb: 3,
+          mb: 2.5,
           '&:hover': {
             color: sharedColors.orange1,
           },
@@ -79,10 +79,7 @@ const BrandsSection = () => {
       <Box
         component='div'
         sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
+          ...sharedStyles.horizontalSpan,
           pt: 3,
         }}
       >

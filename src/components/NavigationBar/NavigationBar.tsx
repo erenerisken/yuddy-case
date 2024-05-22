@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useRecoilValue } from 'recoil';
 import { categoriesAtom } from '../../atoms/Category';
 import { Box, Button, Popover } from '@mui/material';
-import { sharedColors } from '../../utils/Style';
+import { sharedColors, sharedStyles } from '../../utils/Style';
 import React, { useRef, useState } from 'react';
 import CategoryPopover from './CategoryPopover';
 import { Category } from '../../interfaces/Category';
@@ -60,15 +60,7 @@ const NavigationBar = () => {
         justifyContent: 'center',
       }}
     >
-      <Box
-        component='div'
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
-        }}
-      >
+      <Box component='div' sx={sharedStyles.horizontalSpan}>
         <Button sx={buttonStyle}>{t('navigation_bar.home')}</Button>
         {categories.map((category) => (
           <Button

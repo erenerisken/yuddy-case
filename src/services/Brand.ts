@@ -9,5 +9,5 @@ export const getBrands = async (pagination?: Pagination): Promise<Brand[]> => {
     pagination ? { params: paginationToQueryParams(pagination) } : undefined,
   );
 
-  return response.data?.data ?? [];
+  return (pagination ? response.data?.data : response.data) ?? [];
 };

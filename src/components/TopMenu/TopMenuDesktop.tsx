@@ -1,5 +1,5 @@
 import { Badge, Box, IconButton } from '@mui/material';
-import { sharedColors } from '../../utils/Style';
+import { sharedColors, sharedStyles } from '../../utils/Style';
 import SearchTextField from './SearchTextField';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
@@ -16,15 +16,7 @@ const TopMenuDesktop = () => {
         py: 1.5,
       }}
     >
-      <Box
-        component='div'
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
-        }}
-      >
+      <Box component='div' sx={sharedStyles.horizontalSpan}>
         <Box
           component='img'
           alt=''
