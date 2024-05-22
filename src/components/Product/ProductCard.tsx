@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Fade, IconButton, Typography } from '@mui/material';
 import { Product } from '../../interfaces/Product';
 import { useRecoilValue } from 'recoil';
 import { currencyAtom } from '../../atoms/Currency';
@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { formatCurrency } from '../../utils/Currency';
 import { sharedColors } from '../../utils/Style';
 import { isFinite } from 'lodash';
+import SearchIcon from '@mui/icons-material/Search';
+import React, { useState } from 'react';
 
 interface ProductCardProps {
   product: Product;
@@ -15,6 +17,9 @@ const ProductCard = (props: ProductCardProps) => {
   const { t } = useTranslation();
 
   const currency = useRecoilValue(currencyAtom);
+
+  const [hovering, setHovering] = useState(false);
+  const containerRef = React.useRef<HTMLElement>(null);
 
   const leftTags = [];
   const rightTags = [];
@@ -85,8 +90,29 @@ const ProductCard = (props: ProductCardProps) => {
         component='img'
         src={props.product.images[0]}
         alt={props.product.name}
+        onMouseEnter={() => setHovering(true)}
+        onMouseLeave={() => setHovering(false)}
         sx={{ cursor: 'pointer' }}
+        ref={containerRef}
       />
+      <Fade in={hovering} timeout={500}>
+        <IconButton
+          onMouseEnter={() => setHovering(true)}
+          sx={{
+            position: 'absolute',
+            top: '40%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: sharedColors.black,
+            color: sharedColors.white,
+            '&:hover': {
+              backgroundColor: sharedColors.orange1,
+            },
+          }}
+        >
+          <SearchIcon />
+        </IconButton>
+      </Fade>
       <Box
         component='div'
         sx={{
