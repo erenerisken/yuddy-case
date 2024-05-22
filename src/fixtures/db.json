@@ -395,5 +395,307 @@
       "banner": "https://demo4techies.com/prestashop/shopkart-lite/c/3-category_default/Shop.jpg",
       "subcategories": []
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Casual Shoes Sneaker",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/1-large_default/casual-shoes-sneaker.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/2-large_default/casual-shoes-sneaker.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/3-large_default/casual-shoes-sneaker.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/4-large_default/casual-shoes-sneaker.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/5-large_default/casual-shoes-sneaker.jpg"
+      ],
+      "basePrice": 9900,
+      "discountedPrice": 8712,
+      "discountRatio": 12,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 2,
+      "brandID": 1,
+      "isNewProduct": true,
+      "isOnSale": true,
+      "specification": {
+        "Gender": "Male",
+        "Pattern": "Solid",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Square Sunglasses Black Frame",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/6-large_default/square-sunglasses-black-frame.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/7-large_default/square-sunglasses-black-frame.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/8-large_default/square-sunglasses-black-frame.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/9-large_default/square-sunglasses-black-frame.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/10-large_default/square-sunglasses-black-frame.jpg"
+      ],
+      "basePrice": 19900,
+      "discountedPrice": 16318,
+      "discountRatio": 18,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 1,
+      "brandID": 2,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Male",
+        "Pattern": "Solid",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Round Sun Protection Hat",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/11-large_default/round-sun-protection-hat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/12-large_default/round-sun-protection-hat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/13-large_default/round-sun-protection-hat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/14-large_default/round-sun-protection-hat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/15-large_default/round-sun-protection-hat.jpg"
+      ],
+      "basePrice": 29900,
+      "discountedPrice": 22425,
+      "discountRatio": 25,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 5,
+      "brandID": 3,
+      "isNewProduct": true,
+      "isOnSale": true,
+      "specification": {
+        "Gender": "Unisex",
+        "Pattern": "Striped",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Full Sleeve Plain Jacket",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/16-large_default/full-sleeve-plain-jacket.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/17-large_default/full-sleeve-plain-jacket.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/18-large_default/full-sleeve-plain-jacket.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/19-large_default/full-sleeve-plain-jacket.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/20-large_default/full-sleeve-plain-jacket.jpg"
+      ],
+      "basePrice": 24900,
+      "discountedPrice": 22410,
+      "discountRatio": 10,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 3,
+      "brandID": 4,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Male",
+        "Pattern": "Solid",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Unisex Woollen Beanie Cap",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/21-large_default/unisex-woollen-beanie-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/22-large_default/unisex-woollen-beanie-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/23-large_default/unisex-woollen-beanie-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/24-large_default/unisex-woollen-beanie-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/25-large_default/unisex-woollen-beanie-cap.jpg"
+      ],
+      "basePrice": 28900,
+      "discountedPrice": 20230,
+      "discountRatio": 30,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 4,
+      "brandID": 5,
+      "isNewProduct": true,
+      "isOnSale": true,
+      "specification": {
+        "Gender": "Female",
+        "Pattern": "Textured",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 6,
+      "name": "King Plus Casual Shoes",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/26-large_default/king-plus-casual-shoes.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/27-large_default/king-plus-casual-shoes.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/28-large_default/king-plus-casual-shoes.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/29-large_default/king-plus-casual-shoes.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/30-large_default/king-plus-casual-shoes.jpg"
+      ],
+      "basePrice": 27900,
+      "discountedPrice": 23715,
+      "discountRatio": 15,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 4,
+      "brandID": 6,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Unisex",
+        "Pattern": "Striped",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Trendy Stylish Unisex Cap",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/31-large_default/trendy-stylish-unisex-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/32-large_default/trendy-stylish-unisex-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/33-large_default/trendy-stylish-unisex-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/34-large_default/trendy-stylish-unisex-cap.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/35-large_default/trendy-stylish-unisex-cap.jpg"
+      ],
+      "basePrice": 34900,
+      "discountedPrice": 28618,
+      "discountRatio": 18,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 2,
+      "brandID": 7,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Male",
+        "Pattern": "Solid",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Full Sleeve Stylish Jackets",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/36-large_default/full-sleeve-stylish-jackets.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/37-large_default/full-sleeve-stylish-jackets.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/38-large_default/full-sleeve-stylish-jackets.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/39-large_default/full-sleeve-stylish-jackets.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/40-large_default/full-sleeve-stylish-jackets.jpg"
+      ],
+      "basePrice": 39900,
+      "discountedPrice": 35910,
+      "discountRatio": 10,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 4,
+      "brandID": 1,
+      "isNewProduct": true,
+      "isOnSale": true,
+      "specification": {
+        "Gender": "Female",
+        "Pattern": "Textured",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Water Resistant Long Rain Coat",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/41-large_default/water-resistant-long-rain-coat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/42-large_default/water-resistant-long-rain-coat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/43-large_default/water-resistant-long-rain-coat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/44-large_default/water-resistant-long-rain-coat.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/45-large_default/water-resistant-long-rain-coat.jpg"
+      ],
+      "basePrice": 38900,
+      "discountedPrice": 34232,
+      "discountRatio": 12,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 5,
+      "brandID": 2,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Unisex",
+        "Pattern": "Striped",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Stylish Full Sleeves Top",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/46-large_default/stylish-full-sleeves-top.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/47-large_default/stylish-full-sleeves-top.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/48-large_default/stylish-full-sleeves-top.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/49-large_default/stylish-full-sleeves-top.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/50-large_default/stylish-full-sleeves-top.jpg"
+      ],
+      "basePrice": 37900,
+      "discountedPrice": 30320,
+      "discountRatio": 20,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 3,
+      "brandID": 3,
+      "isNewProduct": true,
+      "isOnSale": true,
+      "specification": {
+        "Gender": "Male",
+        "Pattern": "Solid",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Slim Fit Casual Trousers",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/51-large_default/slim-fit-casual-trousers.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/52-large_default/slim-fit-casual-trousers.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/53-large_default/slim-fit-casual-trousers.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/54-large_default/slim-fit-casual-trousers.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/55-large_default/slim-fit-casual-trousers.jpg"
+      ],
+      "basePrice": 31900,
+      "discountedPrice": 27115,
+      "discountRatio": 15,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 4,
+      "brandID": 4,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Female",
+        "Pattern": "Textured",
+        "Occasion": "Casual"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Stylish Black Heel Sandal",
+      "images": [
+        "https://demo4techies.com/prestashop/shopkart-lite/56-large_default/stylish-black-heel-sandal.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/57-large_default/stylish-black-heel-sandal.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/58-large_default/stylish-black-heel-sandal.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/59-large_default/stylish-black-heel-sandal.jpg",
+        "https://demo4techies.com/prestashop/shopkart-lite/60-large_default/stylish-black-heel-sandal.jpg"
+      ],
+      "basePrice": 35900,
+      "discountedPrice": 29438,
+      "discountRatio": 18,
+      "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nUt enim ad minima veniam, quis nostrum exercitationem.\nNnisi ut aliquid ex ea commodi consequatur.\nQuis autem vel eum iure reprehenderit qui in ea voluptate\nVelit esse quam nihil molestiae consequatur, vel illum.\nDolorem eum fugiat quo voluptas nulla pariatur.",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "stock": 5,
+      "brandID": 5,
+      "isNewProduct": true,
+      "isOnSale": false,
+      "specification": {
+        "Gender": "Unisex",
+        "Pattern": "Striped",
+        "Occasion": "Casual"
+      }
+    }
   ]
 }
