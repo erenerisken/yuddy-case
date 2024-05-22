@@ -13,6 +13,7 @@ export const sharedColors = {
   purple1: '#F3E5F5',
   purple4: '#BA68C8',
   orange1: '#E95F42',
+  orange2: '#ff9a52',
   statusGreen: '#008A00',
   statusGreenLightest: '#EBF6EB',
   statusRed: '#AE0000',
@@ -31,6 +32,17 @@ export const sharedColors = {
 };
 
 export const sharedStyles = {
+  breadcrumbs: {
+    fontSize: '13px',
+    color: sharedColors.gray1,
+  },
+  h1: {
+    fontWeight: 600,
+    fontSize: {
+      xs: '18px',
+      md: '1.375rem',
+    },
+  },
   h2: {
     fontWeight: 600,
     fontSize: {
@@ -44,5 +56,13 @@ export const sharedStyles = {
     flexDirection: 'row',
     alignItems: 'center',
     width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
+  },
+  shareButton: {
+    ml: 1.5,
+    color: sharedColors.gray2,
+    cursor: 'pointer',
+    '&:hover': {
+      color: sharedColors.blue5,
+    },
   },
 };

@@ -8,12 +8,16 @@ import { sharedColors } from '../../utils/Style';
 import { isFinite } from 'lodash';
 import SearchIcon from '@mui/icons-material/Search';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { getProductTags } from '../../utils/Product';
 
 interface ProductCardProps {
   product: Product;
 }
 
 const ProductCard = (props: ProductCardProps) => {
+  const navigate = useNavigate();
+
   const { t } = useTranslation();
 
   const currency = useRecoilValue(currencyAtom);
@@ -21,65 +25,17 @@ const ProductCard = (props: ProductCardProps) => {
   const [hovering, setHovering] = useState(false);
   const containerRef = React.useRef<HTMLElement>(null);
 
-  const leftTags = [];
-  const rightTags = [];
-  const commonTagStyle = {
-    p: 0.5,
-    color: sharedColors.white,
-    textTransform: 'uppercase',
-    fontWeight: 500,
-    fontSize: {
-      xs: '9px',
-      sm: '9px',
-      md: '11px',
-      lg: '13px',
-      xl: '13px',
-    },
-    mt: 0.75,
-    mb: 1,
-    mx: 0.75,
-    borderRadius: 0.5,
-    width: 'fit-content',
+  const handleNavigate = () => {
+    navigate(`/product/${props.product.id}`);
   };
-  if (props.product.isOnSale) {
-    rightTags.push(
-      <Box
-        component='div'
-        sx={{
-          backgroundColor: sharedColors.gray3,
-          ...commonTagStyle,
-        }}
-      >
-        {t('product.on_sale')}
-      </Box>,
-    );
-  }
-  if (props.product.isNewProduct) {
-    leftTags.push(
-      <Box
-        component='div'
-        sx={{
-          backgroundColor: sharedColors.orange1,
-          ...commonTagStyle,
-        }}
-      >
-        {t('product.new_product')}
-      </Box>,
-    );
-  }
-  if (isFinite(props.product.discountRatio)) {
-    rightTags.push(
-      <Box
-        component='div'
-        sx={{
-          backgroundColor: sharedColors.black,
-          ...commonTagStyle,
-        }}
-      >
-        {'-' + t('common.percentage', { value: props.product.discountRatio })}
-      </Box>,
-    );
-  }
+
+  const [leftTags, rightTags] = getProductTags(t, props.product, {
+    xs: '9px',
+    sm: '9px',
+    md: '11px',
+    lg: '13px',
+    xl: '13px',
+  });
 
   return (
     <Box
@@ -90,6 +46,7 @@ const ProductCard = (props: ProductCardProps) => {
         component='img'
         src={props.product.images[0]}
         alt={props.product.name}
+        onClick={handleNavigate}
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
         sx={{ cursor: 'pointer' }}
@@ -97,6 +54,7 @@ const ProductCard = (props: ProductCardProps) => {
       />
       <Fade in={hovering} timeout={500}>
         <IconButton
+          onClick={handleNavigate}
           onMouseEnter={() => setHovering(true)}
           sx={{
             position: 'absolute',
@@ -137,6 +95,7 @@ const ProductCard = (props: ProductCardProps) => {
         </Box>
       </Box>
       <Typography
+        onClick={handleNavigate}
         sx={{
           fontSize: '0.9375rem',
           textTransform: 'uppercase',

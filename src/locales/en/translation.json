@@ -3,6 +3,9 @@
     "contact_us": "Contact us",
     "sign_in": "Sign in"
   },
+  "breadcrumbs": {
+    "home": "Home"
+  },
   "common": {
     "currency": "{{symbol}}{{amount}}",
     "percentage": "{{value}}%"
@@ -19,8 +22,17 @@
   },
   "product": {
     "add_to_cart": "Add to cart",
+    "discount_ratio": "Save {{ratio}}%",
+    "edit_policy_note": "(edit with the Customer Reassurance module)",
+    "insufficient_stock": "There are not enough products in stock",
+    "last_items_in_stock": "Last items in stock",
     "new_product": "New Product",
-    "on_sale": "On Sale!"
+    "on_sale": "On Sale!",
+    "policy_delivery": "Delivery policy",
+    "policy_return": "Return policy",
+    "policy_security": "Security policy",
+    "quantity": "Quantity",
+    "share": "Share"
   },
   "top_menu": {
     "search": "Search our catalog"
