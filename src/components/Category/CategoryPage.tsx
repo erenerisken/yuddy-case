@@ -30,6 +30,7 @@ import SortCriteriaSelect from '../SortCriteriaSelect';
 import ProductCard from '../Product/ProductCard';
 import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
+import ProductFilterPanel from './ProductFilterPanel';
 
 const CategoryPage = () => {
   const navigate = useNavigate();
@@ -137,7 +138,12 @@ const CategoryPage = () => {
             <Grid container spacing={3.5}>
               <Grid item xs={3}>
                 <Paper
-                  sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    flexGrow: 1,
+                    mb: 2.5,
+                  }}
                 >
                   <Typography
                     sx={{
@@ -168,6 +174,11 @@ const CategoryPage = () => {
                     </Button>
                   ))}
                 </Paper>
+                <ProductFilterPanel
+                  brands={products.brands}
+                  filters={productFilters}
+                  onChange={setProductFilters}
+                />
               </Grid>
               <Grid item xs={12} md={9}>
                 <Box

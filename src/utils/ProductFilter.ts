@@ -7,4 +7,5 @@ export const getDefaultProductFilters = (): ProductFilter => ({
     pageNumber: 1,
     pageSize: 12,
   },
+  brandIDs: [],
 });

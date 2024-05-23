@@ -5,6 +5,8 @@ import { paginationToQueryParams } from '../utils/Pagination';
 import { transformNumericID } from '../utils/Api';
 import { ProductFilter } from '../interfaces/ProductFilter';
 import { getBrands } from './Brand';
+import { isEmpty } from 'lodash';
+import { compareProducts } from '../utils/Product';
 
 const productsPath = '/products';
 
@@ -28,8 +30,16 @@ export const getCategoryProducts = async (
     params: paginationToQueryParams(filters.pagination),
   });
 
-  const products = (response.data?.data ?? []).map((product: any) =>
+  let products: Product[] = (response.data?.data ?? []).map((product: any) =>
     transformNumericID(product),
+  );
+  if (!isEmpty(filters.brandIDs)) {
+    products = products.filter((product) =>
+      filters.brandIDs.includes(product.brandID),
+    );
+  }
+  products = products.sort((p1, p2) =>
+    compareProducts(p1, p2, filters.sortCriteria),
   );
 
   return {

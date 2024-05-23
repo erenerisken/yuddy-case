@@ -4,6 +4,8 @@ import { Box } from '@mui/material';
 import { isFinite } from 'lodash';
 import React from 'react';
 import { TFunction } from 'i18next';
+import { SortCriteria } from '../interfaces/SortCriteria';
+import { getStoredLanguage } from './Language';
 
 export const getProductTags = (
   t: TFunction,
@@ -65,4 +67,29 @@ export const getProductTags = (
   }
 
   return [leftTags, rightTags];
+};
+
+export const compareProducts = (
+  p1: Product,
+  p2: Product,
+  criteria: SortCriteria,
+): number => {
+  switch (criteria) {
+    case SortCriteria.NAME_A_Z:
+      return p1.name.localeCompare(p2.name, getStoredLanguage());
+    case SortCriteria.NAME_Z_A:
+      return p2.name.localeCompare(p1.name, getStoredLanguage());
+    case SortCriteria.PRICE_LOW_HIGH:
+      return (
+        (p1.discountedPrice ?? p1.basePrice) -
+        (p2.discountedPrice ?? p2.basePrice)
+      );
+    case SortCriteria.PRICE_HIGH_LOW:
+      return (
+        (p2.discountedPrice ?? p2.basePrice) -
+        (p1.discountedPrice ?? p1.basePrice)
+      );
+    default:
+      return p1.id - p2.id;
+  }
 };
