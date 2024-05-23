@@ -23,8 +23,6 @@ const ProductDescriptionSection = (props: ProductDescriptionSectionProps) => {
       .catch((err) => console.error(err.message));
   }, [props.product]);
 
-  console.log(props.product);
-
   return (
     <Box
       component='div'

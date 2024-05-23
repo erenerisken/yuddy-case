@@ -18,7 +18,7 @@ import { sharedColors, sharedStyles } from '../../utils/Style';
 import { useTranslation } from 'react-i18next';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import { getProductTags } from '../../utils/Product';
-import { isFinite } from 'lodash';
+import { isFinite, parseInt } from 'lodash';
 import { formatCurrency } from '../../utils/Currency';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -32,6 +32,7 @@ import ProductPolicyNote from './ProductPolicyNote';
 import RestoreOutlinedIcon from '@mui/icons-material/RestoreOutlined';
 import { Carousel } from 'react-responsive-carousel';
 import ProductDescriptionSection from './ProductDescriptionSection';
+import ProductVariantsSection from './ProductVariantsSection';
 
 const ProductDetailsPage = () => {
   const { t } = useTranslation();
@@ -52,7 +53,7 @@ const ProductDetailsPage = () => {
     }
 
     setLoading(true);
-    getProductByID(productID)
+    getProductByID(parseInt(productID))
       .then((productDetails) => setProduct(productDetails))
       .catch((err) => console.error(err.message))
       .finally(() => setLoading(false));
@@ -211,6 +212,9 @@ const ProductDetailsPage = () => {
                               ? '2px solid #333333'
                               : undefined,
                           cursor: 'pointer',
+                          '&:hover': {
+                            border: '2px solid #333333',
+                          },
                         }}
                       >
                         <Box key={index} component='img' src={image} alt='' />
@@ -444,6 +448,9 @@ const ProductDetailsPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <ProductDescriptionSection product={product} />
+              </Grid>
+              <Grid item xs={12}>
+                <ProductVariantsSection product={product} />
               </Grid>
             </Grid>
           )}

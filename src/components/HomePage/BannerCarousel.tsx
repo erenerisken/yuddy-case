@@ -16,8 +16,6 @@ const BannerCarousel = () => {
       .catch((err) => console.error(err.message));
   }, []);
 
-  console.log(banners);
-
   return isEmpty(banners) ? (
     <></>
   ) : (

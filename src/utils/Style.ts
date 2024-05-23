@@ -57,7 +57,7 @@ export const sharedStyles = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    width: { xs: 360, sm: 540, md: 720, lg: 960, xl: 1140 },
+    width: { xs: '90%', sm: 540, md: 720, lg: 960, xl: 1140 },
   },
   shareButton: {
     ml: 1.5,

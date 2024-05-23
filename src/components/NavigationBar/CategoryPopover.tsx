@@ -8,7 +8,6 @@ interface CategoryPopoverProps {
 }
 
 const CategoryPopover = (props: CategoryPopoverProps) => {
-  console.log(props.category);
   return (
     <Box component='div' sx={{ px: 2.5, py: 1.5 }}>
       <Grid container spacing={1.5}>
