@@ -21,8 +21,6 @@ const ProductVariantsSection = (props: ProductVariantsSectionProps) => {
       .catch((err) => console.error(err.message));
   }, [props.product]);
 
-  console.log('variants', variants);
-
   return isEmpty(variants) ? (
     <></>
   ) : (
@@ -38,6 +36,7 @@ const ProductVariantsSection = (props: ProductVariantsSectionProps) => {
           justifyContent: 'center',
           fontWeight: 600,
           fontSize: '1.375rem',
+          mb: 1.5,
         }}
       >
         {t('product.you_might_also_like')}

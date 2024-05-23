@@ -6,6 +6,18 @@
   "breadcrumbs": {
     "home": "Home"
   },
+  "category": {
+    "n_products": "There are {{n}} products.",
+    "sort_by": "Sort by:",
+    "sort_criteria": {
+      "RELEVANCE": "Relevance",
+      "NAME_A_Z": "Name, A to Z",
+      "NAME_Z_A": "Name, Z to A",
+      "PRICE_LOW_HIGH": "Price, low to high",
+      "PRICE_HIGH_LOW": "Price, high to low"
+    },
+    "showing_n_items": "Showing {{from}}-{{to}} of {{total}} item(s)"
+  },
   "common": {
     "currency": "{{symbol}}{{amount}}",
     "percentage": "{{value}}%"

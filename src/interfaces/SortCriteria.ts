@@ -1,0 +1,7 @@
+export enum SortCriteria {
+  RELEVANCE = 'RELEVANCE',
+  NAME_A_Z = 'NAME_A_Z',
+  NAME_Z_A = 'NAME_Z_A',
+  PRICE_LOW_HIGH = 'PRICE_LOW_HIGH',
+  PRICE_HIGH_LOW = 'PRICE_HIGH_LOW',
+}

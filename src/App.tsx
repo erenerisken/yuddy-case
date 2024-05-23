@@ -13,6 +13,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import ProductDetailsPage from './components/Product/ProductDetailsPage';
+import CategoryPage from './components/Category/CategoryPage';
 
 const App = () => {
   const setCategories = useSetRecoilState(categoriesAtom);
@@ -36,6 +37,7 @@ const App = () => {
       <Routes>
         <Route path='/home/*' element={<HomePage />} />
         <Route path='/product/:productID' element={<ProductDetailsPage />} />
+        <Route path='/category/:categoryID' element={<CategoryPage />} />
         <Route path='*' element={<Navigate to='/home' replace />} />
       </Routes>
     </Box>

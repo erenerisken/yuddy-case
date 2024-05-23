@@ -2,12 +2,15 @@ import { Category } from '../../interfaces/Category';
 import { Box, Button, Grid } from '@mui/material';
 import { sharedColors } from '../../utils/Style';
 import { isEmpty } from 'lodash';
+import { useNavigate } from 'react-router-dom';
 
 interface CategoryPopoverProps {
   category: Category;
 }
 
 const CategoryPopover = (props: CategoryPopoverProps) => {
+  const navigate = useNavigate();
+
   return (
     <Box component='div' sx={{ px: 2.5, py: 1.5 }}>
       <Grid container spacing={1.5}>
@@ -21,6 +24,7 @@ const CategoryPopover = (props: CategoryPopoverProps) => {
               }}
             >
               <Button
+                onClick={() => navigate(`/category/${category.id}`)}
                 sx={{
                   textTransform: 'none',
                   fontWeight: 600,
@@ -45,6 +49,7 @@ const CategoryPopover = (props: CategoryPopoverProps) => {
                 >
                   {category.subcategories.map((subcategory) => (
                     <Button
+                      onClick={() => navigate(`/category/${subcategory.id}`)}
                       sx={{
                         textTransform: 'none',
                         fontWeight: 400,

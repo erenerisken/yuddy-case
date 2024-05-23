@@ -7,8 +7,11 @@ import React, { useRef, useState } from 'react';
 import CategoryPopover from './CategoryPopover';
 import { Category } from '../../interfaces/Category';
 import { isEmpty } from 'lodash';
+import { useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
+  const navigate = useNavigate();
+
   const { t } = useTranslation();
 
   const categories = useRecoilValue(categoriesAtom);
@@ -61,9 +64,12 @@ const NavigationBar = () => {
       }}
     >
       <Box component='div' sx={sharedStyles.horizontalSpan}>
-        <Button sx={buttonStyle}>{t('navigation_bar.home')}</Button>
+        <Button onClick={() => navigate('/')} sx={buttonStyle}>
+          {t('navigation_bar.home')}
+        </Button>
         {categories.map((category) => (
           <Button
+            onClick={() => navigate(`/category/${category.id}`)}
             onMouseEnter={(e) => handleMouseEnter(e, category)}
             onMouseLeave={handleMouseLeave}
             sx={buttonStyle}

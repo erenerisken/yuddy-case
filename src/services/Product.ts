@@ -1,8 +1,10 @@
 import { Pagination } from '../interfaces/Pagination';
-import { Product } from '../interfaces/Product';
+import { PaginatedProducts, Product } from '../interfaces/Product';
 import api from './Api';
 import { paginationToQueryParams } from '../utils/Pagination';
 import { transformNumericID } from '../utils/Api';
+import { ProductFilter } from '../interfaces/ProductFilter';
+import { getBrands } from './Brand';
 
 const productsPath = '/products';
 
@@ -16,6 +18,25 @@ export const getProducts = async (
   return (response.data?.data ?? []).map((product: any) =>
     transformNumericID(product),
   );
+};
+
+export const getCategoryProducts = async (
+  categoryID: number,
+  filters: ProductFilter,
+): Promise<PaginatedProducts> => {
+  const response = await api.get(productsPath, {
+    params: paginationToQueryParams(filters.pagination),
+  });
+
+  const products = (response.data?.data ?? []).map((product: any) =>
+    transformNumericID(product),
+  );
+
+  return {
+    products,
+    brands: await getBrands(),
+    totalCount: products.length,
+  };
 };
 
 export const getProductByID = async (productID: number): Promise<Product> => {

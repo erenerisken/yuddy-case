@@ -1,3 +1,5 @@
+import { Brand } from './Brand';
+
 export interface Product {
   id: number;
   name: string;
@@ -14,4 +16,10 @@ export interface Product {
   specification: {
     [key: string]: string;
   };
+}
+
+export interface PaginatedProducts {
+  products: Product[];
+  brands: Brand[];
+  totalCount: number;
 }

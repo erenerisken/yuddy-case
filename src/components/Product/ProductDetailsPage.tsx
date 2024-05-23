@@ -141,7 +141,7 @@ const ProductDetailsPage = () => {
             </Grid>
           )}
           {product && (
-            <Grid container spacing={2.5}>
+            <Grid container spacing={2.5} sx={{ maxWidth: '93vw' }}>
               <Grid item xs={12} md={6}>
                 <Box
                   component='div'

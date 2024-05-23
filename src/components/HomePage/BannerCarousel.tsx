@@ -6,8 +6,15 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { isEmpty } from 'lodash';
 import { sharedColors } from '../../utils/Style';
+import { useRecoilValue } from 'recoil';
+import { categoriesAtom } from '../../atoms/Category';
+import { useNavigate } from 'react-router-dom';
 
 const BannerCarousel = () => {
+  const navigate = useNavigate();
+
+  const categories = useRecoilValue(categoriesAtom);
+
   const [banners, setBanners] = useState<Banner[]>([]);
 
   useEffect(() => {
@@ -100,6 +107,11 @@ const BannerCarousel = () => {
               )}
               <Button
                 variant='contained'
+                onClick={
+                  !isEmpty(categories)
+                    ? () => navigate(`/category/${categories[0].id}`)
+                    : undefined
+                }
                 sx={{
                   color: sharedColors.white,
                   backgroundColor: sharedColors.orange1,

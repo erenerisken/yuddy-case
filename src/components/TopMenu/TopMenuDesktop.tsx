@@ -2,8 +2,11 @@ import { Badge, Box, IconButton } from '@mui/material';
 import { sharedColors, sharedStyles } from '../../utils/Style';
 import SearchTextField from './SearchTextField';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useNavigate } from 'react-router-dom';
 
 const TopMenuDesktop = () => {
+  const navigate = useNavigate();
+
   return (
     <Box
       component='div'
@@ -19,6 +22,7 @@ const TopMenuDesktop = () => {
       <Box component='div' sx={sharedStyles.horizontalSpan}>
         <Box
           component='img'
+          onClick={() => navigate('/')}
           alt=''
           src='https://demo4techies.com/prestashop/shopkart-lite/img/shopkart-lite-logo-1561444415.jpg'
           sx={{ height: 80, width: 'auto', cursor: 'pointer' }}

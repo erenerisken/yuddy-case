@@ -1,7 +1,7 @@
 import { Language } from '../interfaces/Language';
 
 export const getStoredLanguage = (): Language =>
-  (localStorage.getItem('language') as Language) ?? Language.TR;
+  (localStorage.getItem('language') as Language) ?? Language.EN;
 
 export const getLanguageName = (language: Language): string => {
   switch (language) {

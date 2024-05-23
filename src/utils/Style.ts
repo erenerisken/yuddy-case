@@ -12,6 +12,8 @@ export const sharedColors = {
   gray4: '#ADADAD',
   gray5: '#F6F6F6',
   gray6: '#F1F1F1',
+  gray7: '#F9F9F9',
+  gray8: '#666666',
   purple1: '#F3E5F5',
   purple4: '#BA68C8',
   orange1: '#E95F42',
