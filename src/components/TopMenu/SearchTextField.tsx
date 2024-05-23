@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { sharedColors } from '../../utils/Style';
 
 interface SearchTextFieldProps {
-  width: number;
+  width: number | string;
 }
 
 const SearchTextField = (props: SearchTextFieldProps) => {
@@ -27,7 +27,7 @@ const SearchTextField = (props: SearchTextFieldProps) => {
           </InputAdornment>
         ),
       }}
-      sx={{ width: props.width }}
+      sx={{ width: props.width, backgroundColor: sharedColors.white }}
     />
   );
 };

@@ -58,6 +58,9 @@
     "you_might_also_like": "You Might Also Like"
   },
   "top_menu": {
+    "contact_us": "Contact us",
+    "currency": "Currency:",
+    "language": "Language:",
     "search": "Search our catalog"
   }
 }

@@ -14,10 +14,17 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import ProductDetailsPage from './components/Product/ProductDetailsPage';
 import CategoryPage from './components/Category/CategoryPage';
+import useIsMobile from './hooks/IsMobile';
+import TopMenuMobile from './components/TopMenu/TopMenuMobile';
+import MobileSearchField from './components/TopMenu/MobileSearchField';
+import MobileNavigationBar from './components/NavigationBar/MobileNavigationBar';
 
 const App = () => {
   const setCategories = useSetRecoilState(categoriesAtom);
   const setCurrency = useSetRecoilState(currencyAtom);
+
+  const isMobile = useIsMobile();
+  console.log(isMobile);
 
   useEffect(() => {
     setCurrency(getStoredCurrency());
@@ -31,9 +38,9 @@ const App = () => {
 
   return (
     <Box component='div'>
-      <AppHeader />
-      <TopMenuDesktop />
-      <NavigationBar />
+      {isMobile
+        ? [<TopMenuMobile />, <MobileSearchField />, <MobileNavigationBar />]
+        : [<AppHeader />, <TopMenuDesktop />, <NavigationBar />]}
       <Routes>
         <Route path='/home/*' element={<HomePage />} />
         <Route path='/product/:productID' element={<ProductDetailsPage />} />
