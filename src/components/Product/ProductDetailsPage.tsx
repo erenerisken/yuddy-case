@@ -12,6 +12,7 @@ import {
   Skeleton,
   Typography,
 } from '@mui/material';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import DoDisturbIcon from '@mui/icons-material/DoDisturb';
 import { sharedColors, sharedStyles } from '../../utils/Style';
 import { useTranslation } from 'react-i18next';
@@ -29,6 +30,8 @@ import QuantityInput from './QuantityInput';
 import WarningIcon from '@mui/icons-material/Warning';
 import ProductPolicyNote from './ProductPolicyNote';
 import RestoreOutlinedIcon from '@mui/icons-material/RestoreOutlined';
+import { Carousel } from 'react-responsive-carousel';
+import ProductDescriptionSection from './ProductDescriptionSection';
 
 const ProductDetailsPage = () => {
   const { t } = useTranslation();
@@ -38,6 +41,7 @@ const ProductDetailsPage = () => {
   const [loading, setLoading] = useState(false);
   const [product, setProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState(1);
+  const [selectedImage, setSelectedImage] = useState(0);
   const containerRef = React.useRef<HTMLElement>(null);
 
   const { productID } = useParams<string>();
@@ -56,6 +60,7 @@ const ProductDetailsPage = () => {
 
   useEffect(() => {
     setQuantity(1);
+    setSelectedImage(0);
   }, [product]);
 
   const [leftTags, rightTags] = product
@@ -72,6 +77,7 @@ const ProductDetailsPage = () => {
         flexDirection: 'column',
         flexGrow: 1,
         alignItems: 'center',
+        pb: 5,
       }}
     >
       <Box component='div' sx={{ ...sharedStyles.horizontalSpan }}>
@@ -146,7 +152,7 @@ const ProductDetailsPage = () => {
                 >
                   <Box
                     component='img'
-                    src={product.images[0]}
+                    src={product.images[selectedImage]}
                     alt={product.name}
                     sx={{ border: '1px solid #e1e1e1' }}
                     ref={containerRef}
@@ -185,6 +191,32 @@ const ProductDetailsPage = () => {
                       {rightTags}
                     </Box>
                   </Box>
+                  <Box component='div' sx={{ mt: 2 }} />
+                  <Carousel
+                    showThumbs={false}
+                    showIndicators={false}
+                    showStatus={false}
+                    selectedItem={1}
+                    infiniteLoop
+                    centerMode
+                    centerSlidePercentage={25}
+                    onClickItem={(i) => setSelectedImage(i)}
+                  >
+                    {product.images.map((image, index) => (
+                      <Box
+                        sx={{
+                          m: 1.5,
+                          border:
+                            index === selectedImage
+                              ? '2px solid #333333'
+                              : undefined,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <Box key={index} component='img' src={image} alt='' />
+                      </Box>
+                    ))}
+                  </Carousel>
                 </Box>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -409,6 +441,9 @@ const ProductDetailsPage = () => {
                     title={t('product.policy_return')}
                   />
                 </Box>
+              </Grid>
+              <Grid item xs={12}>
+                <ProductDescriptionSection product={product} />
               </Grid>
             </Grid>
           )}
