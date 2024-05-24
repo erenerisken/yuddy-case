@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# Yuddy Case Interview React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React project was created as part of a case interview for Yuddy. The project is designed to demonstrate the ability
+to build and run a React application, utilizing a mock server to simulate API interactions.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Ensure you have the following installed on your machine:
 
-### `npm start`
+- **Node.js**: v20.13.1
+- **Yarn**: v1.22.22
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Follow these steps to set up and run the project locally.
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, clone the repository to your local machine:
 
-### `npm run build`
+```bash
+git clone https://github.com/erenerisken/yuddy-case.git
+cd yuddy-case
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Create a .env File
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a `.env` file in the root directory of the project with the following content:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+REACT_APP_API_URL=http://localhost:8080
+```
 
-### `npm run eject`
+This environment variable points to the mock server's API URL.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 3. Install Dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the project dependencies using Yarn:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+yarn install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 4. Start the Mock Server
 
-## Learn More
+Run the mock server using the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npx json-server src/fixtures/db.json -p 8080
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This command starts a JSON server that serves data from `src/fixtures/db.json` on port 8080.
+
+### 5. Run the Application
+
+Start the React application with:
+
+```bash
+yarn start
+```
+
+The app will be available at `http://localhost:3000`.
+
+## Additional Information
+
+- The mock server is used to simulate API responses and serves as the backend for the application.
+- The `REACT_APP_API_URL` environment variable can be adjusted to point to a different API endpoint if necessary.
+
+## Project Structure
+
+- `src/`: Contains the source code of the React application.
+- `src/fixtures/`: Contains the mock data used by the JSON server.
+
+## Troubleshooting
+
+- Ensure all dependencies are installed correctly.
+- Verify that the `.env` file is correctly configured.
+- Make sure the mock server is running before starting the React application.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+For any questions or issues, please contact erenerisken@gmail.com.
+
+---
+
+Thank you for reviewing this project for the Yuddy case interview!
