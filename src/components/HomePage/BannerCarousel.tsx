@@ -3,7 +3,6 @@ import { Banner } from '../../interfaces/Banner';
 import { getBanners } from '../../services/Banner';
 import { Box, Button, Typography } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { isEmpty } from 'lodash';
 import { sharedColors } from '../../utils/Style';
 import { useRecoilValue } from 'recoil';

@@ -6,7 +6,6 @@ import { Box, Typography } from '@mui/material';
 import { sharedColors, sharedStyles } from '../../utils/Style';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const BrandsSection = () => {
   const { t } = useTranslation();

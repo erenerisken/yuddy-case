@@ -12,7 +12,6 @@ import {
   Skeleton,
   Typography,
 } from '@mui/material';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import DoDisturbIcon from '@mui/icons-material/DoDisturb';
 import { sharedColors, sharedStyles } from '../../utils/Style';
 import { useTranslation } from 'react-i18next';

@@ -7,6 +7,7 @@ import '@fontsource/roboto/700.css';
 import createCache from '@emotion/cache';
 
 import 'material-react-toastify/dist/ReactToastify.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './index.css';
 import './i18n';
 import App from './App';

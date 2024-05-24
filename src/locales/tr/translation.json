@@ -1,1 +1,67 @@
-{}
+{
+  "app_header": {
+    "contact_us": "İletişim",
+    "sign_in": "Giriş"
+  },
+  "breadcrumbs": {
+    "home": "Ana Sayfa"
+  },
+  "category": {
+    "brand": "Marka",
+    "filter": "Filtrele",
+    "filter_by": "Filtrele",
+    "n_products": "{{n}} adet ürün mevcut.",
+    "sort_by": "Sıralama:",
+    "sort_criteria": {
+      "RELEVANCE": "Alaka Düzeyi",
+      "NAME_A_Z": "A'dan to Z'ye",
+      "NAME_Z_A": "Z'den A'ya",
+      "PRICE_LOW_HIGH": "Fiyat, ucuzdan pahalıya",
+      "PRICE_HIGH_LOW": "Fiyat, pahalıdan ucuza"
+    },
+    "showing_n_items": "{{total}} ürün arasından {{from}}-{{to}} gösteriliyor"
+  },
+  "common": {
+    "currency": "{{amount}}{{symbol}}",
+    "percentage": "%{{value}}"
+  },
+  "homepage": {
+    "brands": {
+      "title": "Markalar"
+    },
+    "featured_products": "Öne Çıkan"
+  },
+  "navigation_bar": {
+    "contact_us": "İletişim",
+    "home": "Ana Sayfa"
+  },
+  "product": {
+    "add_to_cart": "Sepete Ekle",
+    "data_sheet": "Tüm Özellikler",
+    "description": "Açıklama",
+    "details": "Ürün Detayları",
+    "discount_ratio": "%{{ratio}} indirim",
+    "edit_policy_note": "(Müşteri güvencesi modülü gerekir)",
+    "insufficient_stock": "Stokta yeterli ürün mevcut değil",
+    "in_stock": "Stokta",
+    "last_items_in_stock": "Stokta son ürünler",
+    "new_product": "Yeni Ürün",
+    "n_items": "{{n}} ürün",
+    "one_item": "1 ürün",
+    "on_sale": "İndirim!",
+    "policy_delivery": "Teslimat Politikası",
+    "policy_return": "İade Politikası",
+    "policy_security": "Güvenlik Politikası",
+    "specific_references": "Spesifik Referanslar",
+    "quantity": "Adet",
+    "reference": "Referans",
+    "share": "Paylaş",
+    "you_might_also_like": "Benzer Ürünler"
+  },
+  "top_menu": {
+    "contact_us": "İletişim",
+    "currency": "Para Birimi:",
+    "language": "Dil:",
+    "search": "Kataloğu arayın"
+  }
+}
