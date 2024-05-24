@@ -8,6 +8,7 @@
   },
   "category": {
     "brand": "Brand",
+    "filter": "Filter",
     "filter_by": "Filter By",
     "n_products": "There are {{n}} products.",
     "sort_by": "Sort by:",

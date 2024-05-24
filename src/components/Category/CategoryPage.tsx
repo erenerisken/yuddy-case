@@ -31,9 +31,12 @@ import ProductCard from '../Product/ProductCard';
 import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import ProductFilterPanel from './ProductFilterPanel';
+import useIsMobile from '../../hooks/IsMobile';
 
 const CategoryPage = () => {
   const navigate = useNavigate();
+
+  const isMobile = useIsMobile();
 
   const { t } = useTranslation();
 
@@ -114,141 +117,230 @@ const CategoryPage = () => {
             mt: 2.5,
           }}
         >
-          <Breadcrumbs sx={{ mb: 2 }}>
-            <Link
-              underline='hover'
-              color='inherit'
-              href='/'
-              sx={sharedStyles.breadcrumbs}
-            >
-              {t('breadcrumbs.home')}
-            </Link>
-            {categoriesList.map((category) => (
+          {!isMobile && (
+            <Breadcrumbs sx={{ mb: 2 }}>
               <Link
                 underline='hover'
                 color='inherit'
-                href={`/category/${category.id}`}
+                href='/'
                 sx={sharedStyles.breadcrumbs}
               >
-                {category.name}
+                {t('breadcrumbs.home')}
               </Link>
-            ))}
-          </Breadcrumbs>
-          {currentCategory && (
-            <Grid container spacing={3.5}>
-              <Grid item xs={3}>
-                <Paper
-                  sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    flexGrow: 1,
-                    mb: 2.5,
-                  }}
+              {categoriesList.map((category) => (
+                <Link
+                  underline='hover'
+                  color='inherit'
+                  href={`/category/${category.id}`}
+                  sx={sharedStyles.breadcrumbs}
                 >
-                  <Typography
+                  {category.name}
+                </Link>
+              ))}
+            </Breadcrumbs>
+          )}
+          {currentCategory && (
+            <Grid container spacing={3.5} sx={{ maxWidth: '93vw' }}>
+              {!isMobile && (
+                <Grid item xs={3}>
+                  <Paper
                     sx={{
-                      m: 2,
-                      fontWeight: 600,
-                      textTransform: 'uppercase',
-                      fontSize: '14px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      flexGrow: 1,
+                      mb: 2.5,
                     }}
                   >
-                    {currentCategory.name}
-                  </Typography>
-                  {!isEmpty(currentCategory.subcategories) && <Divider />}
-                  {currentCategory.subcategories.map((category) => (
-                    <Button
-                      onClick={() => navigate(`/category/${category.id}`)}
+                    <Typography
                       sx={{
-                        textTransform: 'none',
-                        justifyContent: 'left',
-                        alignItems: 'left',
-                        pl: 2,
-                        color: sharedColors.black,
-                        '&:hover': {
-                          color: sharedColors.orange1,
-                        },
+                        m: 2,
+                        fontWeight: 600,
+                        textTransform: 'uppercase',
+                        fontSize: '14px',
                       }}
                     >
-                      {category.name}
-                    </Button>
-                  ))}
-                </Paper>
-                <ProductFilterPanel
-                  brands={products.brands}
-                  filters={productFilters}
-                  onChange={setProductFilters}
-                />
-              </Grid>
+                      {currentCategory.name}
+                    </Typography>
+                    {!isEmpty(currentCategory.subcategories) && <Divider />}
+                    {currentCategory.subcategories.map((category) => (
+                      <Button
+                        onClick={() => navigate(`/category/${category.id}`)}
+                        sx={{
+                          textTransform: 'none',
+                          justifyContent: 'left',
+                          alignItems: 'left',
+                          pl: 2,
+                          color: sharedColors.black,
+                          '&:hover': {
+                            color: sharedColors.orange1,
+                          },
+                        }}
+                      >
+                        {category.name}
+                      </Button>
+                    ))}
+                  </Paper>
+                  <ProductFilterPanel
+                    brands={products.brands}
+                    filters={productFilters}
+                    onChange={setProductFilters}
+                  />
+                </Grid>
+              )}
               <Grid item xs={12} md={9}>
                 <Box
                   sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}
                 >
-                  <Box
-                    component='img'
-                    src={currentCategory.banner}
-                    alt={currentCategory.name}
-                    width='100%'
-                    height='auto'
-                  />
-                  <Typography
-                    sx={{
-                      mt: 2.5,
-                      textTransform: 'uppercase',
-                      fontSize: '1.375rem',
-                      fontWeight: 600,
-                    }}
-                  >
-                    {currentCategory.name}
-                  </Typography>
-                  <Typography
-                    sx={{ mt: 1.5, fontWeight: 400, fontSize: '14px' }}
-                  >
-                    {currentCategory.description}
-                  </Typography>
-                  <Paper
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                      flexGrow: 1,
-                      p: 2.5,
-                      backgroundColor: sharedColors.gray7,
-                      mt: 2.5,
-                      alignItems: 'center',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        color: sharedColors.gray8,
-                      }}
-                    >
-                      {t('category.n_products', { n: products.totalCount })}
-                    </Typography>
-                    <Box component='div' sx={{ flexGrow: 1 }} />
-                    <Typography
-                      sx={{
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        color: sharedColors.gray8,
-                        mr: 1.5,
-                      }}
-                    >
-                      {t('category.sort_by')}
-                    </Typography>
-                    <Box component='div' sx={{ width: 240 }}>
-                      <SortCriteriaSelect
-                        value={productFilters.sortCriteria}
-                        onChange={(newCriteria) =>
-                          setProductFilters({
-                            ...productFilters,
-                            sortCriteria: newCriteria,
-                          })
-                        }
-                      />
+                  {isMobile ? (
+                    <Box component='div'>
+                      <Typography
+                        sx={{
+                          textTransform: 'uppercase',
+                          fontSize: '1.375rem',
+                          fontWeight: 600,
+                          flexGrow: 1,
+                          textAlign: 'center',
+                        }}
+                      >
+                        {currentCategory.name}
+                      </Typography>
+                      <Box
+                        component='div'
+                        sx={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          flexGrow: 1,
+                          p: 2,
+                          border: '1px solid #e1e1e1',
+                          backgroundColor: sharedColors.gray7,
+                          mt: 1.5,
+                        }}
+                      >
+                        <Box
+                          component='div'
+                          sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            flexGrow: 1,
+                          }}
+                        >
+                          <Box component='div' sx={{ flexGrow: 5, mr: 1.5 }}>
+                            <SortCriteriaSelect
+                              value={productFilters.sortCriteria}
+                              onChange={(newCriteria) =>
+                                setProductFilters({
+                                  ...productFilters,
+                                  sortCriteria: newCriteria,
+                                })
+                              }
+                            />
+                          </Box>
+                          <Button
+                            variant='outlined'
+                            sx={{
+                              flexGrow: 1,
+                              borderRadius: 0,
+                              color: sharedColors.black,
+                              border: '1px solid #e1e1e1',
+                            }}
+                          >
+                            {t('category.filter')}
+                          </Button>
+                        </Box>
+                        <Typography
+                          sx={{
+                            flexGrow: 1,
+                            textAlign: 'center',
+                            fontSize: '14px',
+                            fontWeight: 400,
+                            color: sharedColors.gray8,
+                            mt: 1.5,
+                          }}
+                        >
+                          {t('category.showing_n_items', {
+                            from:
+                              (productFilters.pagination.pageNumber - 1) *
+                                productFilters.pagination.pageSize +
+                              1,
+                            to: Math.min(
+                              products.totalCount,
+                              productFilters.pagination.pageNumber *
+                                productFilters.pagination.pageSize,
+                            ),
+                            total: products.totalCount,
+                          })}
+                        </Typography>
+                      </Box>
                     </Box>
-                  </Paper>
+                  ) : (
+                    <Box component='div'>
+                      <Box
+                        component='img'
+                        src={currentCategory.banner}
+                        alt={currentCategory.name}
+                        width='100%'
+                        height='auto'
+                      />
+                      <Typography
+                        sx={{
+                          mt: 2.5,
+                          textTransform: 'uppercase',
+                          fontSize: '1.375rem',
+                          fontWeight: 600,
+                        }}
+                      >
+                        {currentCategory.name}
+                      </Typography>
+                      <Typography
+                        sx={{ mt: 1.5, fontWeight: 400, fontSize: '14px' }}
+                      >
+                        {currentCategory.description}
+                      </Typography>
+                      <Paper
+                        sx={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          flexGrow: 1,
+                          p: 2.5,
+                          backgroundColor: sharedColors.gray7,
+                          mt: 2.5,
+                          alignItems: 'center',
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: '14px',
+                            fontWeight: 400,
+                            color: sharedColors.gray8,
+                          }}
+                        >
+                          {t('category.n_products', { n: products.totalCount })}
+                        </Typography>
+                        <Box component='div' sx={{ flexGrow: 1 }} />
+                        <Typography
+                          sx={{
+                            fontSize: '14px',
+                            fontWeight: 400,
+                            color: sharedColors.gray8,
+                            mr: 1.5,
+                          }}
+                        >
+                          {t('category.sort_by')}
+                        </Typography>
+                        <Box component='div' sx={{ width: 240 }}>
+                          <SortCriteriaSelect
+                            value={productFilters.sortCriteria}
+                            onChange={(newCriteria) =>
+                              setProductFilters({
+                                ...productFilters,
+                                sortCriteria: newCriteria,
+                              })
+                            }
+                          />
+                        </Box>
+                      </Paper>
+                    </Box>
+                  )}
                   <Grid container spacing={3.5} sx={{ mt: 0.5, mb: 3.5 }}>
                     {products.products.map((product) => (
                       <Grid item xs={6} sm={6} md={4}>
